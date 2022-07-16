@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------- */
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------------------------- */
+
+header {
+    /* background-image: url('media/banner.jpg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.4)) , url(media/banner.jpg);
+        
+}
+.social-media {
+    text-align: center;
+    padding-top: 12px;
+}
+ion-icon {
+    background-color: rgb(249, 250, 250);
+    color: rgb(218, 25, 25);
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 50%;
+}
+.flex a {
+    text-decoration: none;
+}
+.primary-header {
+    max-width: 77%;
+    background-color: white;
+    margin: 10px auto;
+    /* position: fixed; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 10%;
+    right: 10%;
+    border: 1px solid rgb(148, 145, 145);
+    
+}
+.header-logo span {
+    font-size: 24px;
+    color: rgb(253, 103, 9);
+    padding-left: 16px;
+    font-weight: 600;
+}
+.header-nav a {
+    font-size: 14px;
+    margin-right: 32px;
+    color: black;
+    font-weight: 600;
+}
+.hero {
+    text-align: center;
+    padding: 15% 0;
+    /* color: #fff; */
+}
+.hero a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: rgb(253, 103, 9);
+    padding: 10px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    /* padding-bottom: 8px; */
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1.5px;
+}
+.hero p {
+    font-size: 14px;
+    margin: 16px 0;
+    color: #fff;
+} 
+
+/* -------------------- */
+
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+.circle-parent {
+    text-align: center;
+}
+.circle-parent .one , .two{
+    background-color: rgb(102, 101, 101);
+}
+
+/* ----------------------- */
+
+main {
+    max-width: 77%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.services {
+    text-align: center;
+    margin-top: 6%;
+}
+.services h2 {
+    font-size: 28px;
+    text-decoration: gray underline;
+    font-weight: 550;
+}
+.services p {
+    color: gray;
+    margin: 12px 0;
+    margin-bottom: 24px;
+}
+
+.logo {
+    border-radius: 0%;
+    padding: 92px;
+    font-size: 36px;
+    color: white;
+    margin: 32px 0;
+}
+.code {
+    background-color: rgb(3, 151, 107);
+}
+.plane {
+    background-color: rgb(253, 103, 9);
+}
+.home {
+    background-color: rgb(3, 121, 168);
+}
+.flask {
+    background-color: rgb(4, 194, 99);
+} 
+/* ------------------------------ */
+
+.portfolio {
+    width: 100%;
+    height: 200%;
+}
+.portfolio img {
+    width: 23%;
+    padding-top: 2.5%;
+}
+.team img{
+    border-radius: 50%;
+}
+
+/* ----------------------------- */
+
+.design-skill h3 {
+    font-style: italic;
+}
+.design-skill p {
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 1px;
+}
+.design-text {
+    width: 63%;
+    font-size: 14px;
+}
+.design-text a {
+    color: rgb(253, 103, 9);
+}
+.box {
+    width: 32%;
+}
+.box1 , .box2 , .box3 , .box4 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 10px;
+}
+.box1 {
+    background: linear-gradient(to right, rgb(253, 103, 9) 90% , gray 10%);
+}
+.box2 {
+    background: linear-gradient(to right, rgb(253, 103, 9) 80% , gray 20%);
+}
+.box3 {
+    background: linear-gradient(to right, rgb(253, 103, 9) 70% , gray 30%);
+}
+.box4 {
+    background: linear-gradient(to right, rgb(253, 103, 9) 80% , gray 20%);
+}
+
+  /* ----------------------- */
+
+.col-para {
+    width: 60%;
+}
+.col-form{
+    width: 35%;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    padding: 8px;
+    margin-bottom: 24px;
+}
+.btn {
+    background-color:rgb(253, 103, 9);
+    padding: 10px;
+    border: none;
+}
+ /* ------------------- */
+
+ .footer {
+     padding-top: 20%;
+     padding-bottom: 2%;
+ }
+ .top {
+     background-color: rgb(253, 103, 9);
+     padding: 10px 28px;
+     color: #fff;
+     font-size: 14px;
+     font-weight: 700;
+ }
+
+
+
